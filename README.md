@@ -1,15 +1,6 @@
 # 🤖 Cloudflare Worker Telegram Bot Gateway (Microservices Architecture)
 
-![Cloudflare Workers]()
-![Telegram]()
-
 A scalable, high-performance Telegram Bot Gateway hosted on **Cloudflare Workers**. This project serves as a central "Traffic Controller" that routes user commands to different backend logic workers (Microservices) using **Cloudflare Service Bindings**.
-
-## 🚀 Architecture Design
-
-Instead of putting all calculation logic (2D, 3D, Reports) into one massive file, this architecture splits features into separate workers. This ensures high stability and easier updates.
-
-![Architecture Diagram](https://mermaid.ink/img/pako:eNp1kcFqwzAMhl_F6NRC_QA97DAYO-w22G6lF0U1sQPbGdtKGeW958R22q4T_T_8P9kPst4YFRkcflpVA4-9Fh1eGlV-1FqgM8Fqf4OPl-fn84yvM75-yA1t7T-c4QJ7R-i0h4qcy69_b_C8wQ8Y1-D0i6b4B10w-qM_4gc8Qf8r3tD_ip_wAv2fWOD8pC20Z0_o1QItOqjI-VqWw02zN6p6j0G7yqjStbZ2hY-W0qgDta1d471l1L4G7WpXuGgZ9T5Q29o1LlpG0w_UtnbE5b-yq22tO8K_7A51qV3j-r-yq21tO8K_7A51qV3j-r-yq20tO-Jfr_wGlh-Z4g?type=png)
 
 ## ✨ Key Features
 
