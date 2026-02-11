@@ -1,3 +1,8 @@
+GitHub Repository တွင် တင်ရန်အတွက် အပြည့်စုံဆုံးနှင့် Professional အကျဆုံး **README.md** Source Code ဖြစ်ပါသည်။
+
+ဒီ Code ကို Copy ကူးပြီး `README.md` ဖိုင်ထဲတွင် Paste လုပ်လိုက်ပါက GitHub တွင် Diagram များ၊ Table များနှင့်တကွ လှပစွာ ပေါ်နေပါလိမ့်မည်။
+
+```markdown
 # 🤖 Cloudflare Worker Telegram Bot Gateway (Microservices Architecture)
 
 ![Cloudflare Workers](https://img.shields.io/badge/Cloudflare-Workers-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
@@ -25,6 +30,8 @@ graph TD
     W1 -->|Result| TG
     W2 -->|Result| TG
     W3 -->|Result| TG
+
+```
 
 ## ✨ Key Features
 
