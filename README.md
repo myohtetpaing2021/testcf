@@ -10,20 +10,21 @@ A scalable, high-performance Telegram Bot Gateway hosted on **Cloudflare Workers
 Instead of putting all logic into one massive file, this architecture splits features into separate workers.
 
 ```mermaid
-graph TD
-    User[📱 Telegram User] -->|Sends Command| TG[Telegram API]
-    TG -->|Webhook| Gateway[🤖 Main Gateway Worker]
+graph LR
+    User["📱 Telegram User"] -->|Command| TG["Telegram API"]
+    TG -->|Webhook| Gateway["🤖 Main Gateway"]
     
-    subgraph Cloudflare Internal Network
-    Gateway -->|Service Binding| W1[🎰 2D Worker]
-    Gateway -->|Service Binding| W2[🎲 3D Worker]
-    Gateway -->|Service Binding| W3[📊 Report Worker]
-    Gateway -->|Service Binding| W4[🎮 Game/Other Workers]
+    subgraph Cloudflare ["☁️ Cloudflare Internal Network"]
+        direction LR
+        Gateway -->|Binding| W1["🎰 2D Worker"]
+        Gateway -->|Binding| W2["🎲 3D Worker"]
+        Gateway -->|Binding| W3["📊 Report Worker"]
+        Gateway -->|Binding| W4["🎮 Other Workers"]
     end
     
-    W1 -->|Reply Message| TG
-    W2 -->|Reply Message| TG
-    W3 -->|Reply Message| TG
+    W1 -.->|Reply| TG
+    W2 -.->|Reply| TG
+    W3 -.->|Reply| TG
 
 
 ```
