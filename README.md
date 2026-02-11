@@ -26,8 +26,6 @@ graph TD
     W2 -->|Result| TG
     W3 -->|Result| TG
 
-```
-
 ## ✨ Key Features
 
 * **Microservices Architecture:** Add, remove, or update specific features without restarting the Main Gateway.
